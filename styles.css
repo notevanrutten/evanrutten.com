@@ -1,23 +1,35 @@
+body {
+    font-family: 'Open Sans';
+    color: #ffffff;
+    background-color: #121212;
+}
+
 ul {
-    list-style-type: none;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: black;
+    list-style-type: none;
+    background-color: #1e1e1e;
 }
 
 li {
     float: left;
 }
 
+li img {
+    padding-top: 12px;
+    padding-right: 18px;
+    padding-left: 12px;
+}
+
 li a {
     display: block;
-    color: white;
+    padding: 16px 18px;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    color: #ffffff;
 }
 
 li a:hover {
-    background-color: darkgray;
+    background-color: #2d2d2d;
 }
