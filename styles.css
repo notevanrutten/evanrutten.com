@@ -17,14 +17,13 @@ li {
 }
 
 li img {
-    padding-top: 12px;
-    padding-right: 18px;
-    padding-left: 12px;
+    padding: 0px 14px;
+    padding-top: 14px;
 }
 
 li a {
     display: block;
-    padding: 16px 18px;
+    padding: 18px 14px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
