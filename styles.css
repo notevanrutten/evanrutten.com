@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  max-width: 80rem;
+  max-width: 60rem;
   margin-top: 0.75rem;
   margin-right: auto;
   margin-left: auto;
@@ -75,7 +75,7 @@ header {
 }
 
 main {
-  max-width: 80rem;
+  max-width: 60rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -90,21 +90,44 @@ main {
 
 .panel h1 {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   color: #ffffff;
 }
 
-.panel h2 {
-  margin-top: 1rem;
+.panel h3 {
+  margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.25rem;
   color: #b0bac5;
 }
 
 .panel img {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px 0px;
   border-radius: 1.25rem;
+}
+
+.panel section {
+  display: flex;
+  align-items: center;
+}
+
+.panel section img {
+  margin-right: 1.5rem;
+  width: 15rem;
+  height: auto;
+}
+
+.format {
+  margin-top: 0;
+  margin-right: 2.5rem;
+  margin-bottom: 0;
+  margin-left: 2.5rem;
+  text-align: justify;
+  color: #b0bac5;
+}
+
+.format h2 {
+  font-size: 1.25rem;
 }
 
 .resume img {
@@ -122,22 +145,22 @@ main {
   justify-content: space-between;
 }
 
-.contact h2 {
+.contact h3 {
   display: flex;
   align-items: center;
   font-weight: normal;
 }
 
-.contact h2 i {
+.contact h3 i {
   margin-right: 1rem;
   font-size: 1.5rem;
 }
 
-.contact h2 a {
+.contact h3 a {
   color: #b0bac5;
   text-decoration: none;
 }
 
-.contact h2 a:hover {
+.contact h3 a:hover {
   filter: brightness(90%);
 }
