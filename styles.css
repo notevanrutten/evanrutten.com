@@ -138,11 +138,12 @@ main {
   height: auto;
 }
 
-.projects section {
-  margin-top: 1.5rem;
+.projects section + section {
+  margin-top: 2.5rem;
 }
 
 .projects section img {
+  margin-right: 1.5rem;
   width: 20rem;
   height: auto;
 }
