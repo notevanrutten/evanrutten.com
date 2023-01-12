@@ -128,6 +128,16 @@ main {
   margin-bottom: 0;
 }
 
+.format a {
+  font-size: 0.75rem;
+  color: #b0bac5;
+  text-decoration: none;
+}
+
+.format a:hover {
+  filter: brightness(90%);
+}
+
 .welcome section {
   align-items: center;
 }
