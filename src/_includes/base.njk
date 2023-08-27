@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div class="content">
+      <header class="header_container">
+        <h1 class="header_title"><a href="/">Evan Rutten</a></h1>
+        <ul class="header_links">
+          <li><a class="header_link" href="/projects">Projects</a></li>
+          <li><a class="header_link" href="/resume">Resume</a></li>
+          <li><a class="header_link" href="/contact">Contact</a></li>
+        </ul>
+      </header>
+      <main class="main_container">{{ content | safe }}</main>
+    </div>
+    <footer class="footer"><p>&copy; Evan Rutten 2023</p></footer>
+  </body>
+</html>
