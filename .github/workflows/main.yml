@@ -1,8 +1,8 @@
-name: evanrutten.com CI
+name: Build and Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: main
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
         run: npm run build
 
   deploy:
-    runs-on: [ self-hosted ]
+    runs-on: self-hosted
     needs: build
 
     steps:
