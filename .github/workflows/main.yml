@@ -1,0 +1,24 @@
+name: Eleventy CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: action/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        uses: npm install
+
+      - name: Build project
+        uses: npm run build
