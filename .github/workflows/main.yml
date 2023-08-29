@@ -1,4 +1,4 @@
-name: Eleventy CI
+name: evanrutten.com CI
 
 on:
   push:
@@ -22,3 +22,18 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+  deploy:
+    runs-on: [ self-hosted ]
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+    
+      - name: Deploy to server
+        run: |
+          cd /var/www/evanrutten.com
+          git pull
+          npm install
+          npm run build
