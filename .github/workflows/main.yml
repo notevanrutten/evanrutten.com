@@ -18,7 +18,7 @@ jobs:
           node-version: 18.x
 
       - name: Install dependencies
-        uses: npm install
+        run: npm install
 
       - name: Build project
-        uses: npm run build
+        run: npm run build
