@@ -16,15 +16,10 @@
     />
   </head>
   <body>
-    <header>
-      <h1><a href="/">Evan Rutten</a></h1>
-      <ul>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/resume">Resume</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </header>
-    <main>{{ content | safe }}</main>
-    <footer><p>© {% year %} Evan Rutten</p></footer>
+    <main>
+      {% include "components/navbar.njk" %}
+      {{ content | safe }}
+      {% include "components/footer.njk" %}
+    </main>
   </body>
 </html>
