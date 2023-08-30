@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy({ "./src/favicons": "/" });
+    eleventyConfig.addPassthroughCopy({ "./src/images": "/" });
 
     eleventyConfig.addShortcode("year", () => {
         return new Date().getFullYear();
