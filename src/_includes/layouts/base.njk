@@ -20,10 +20,10 @@
     />
   </head>
   <body>
-    <header>{% include "components/navbar.njk" %}</header>
+    {% include "components/navbar.njk" %}
     <main>
       {{ content | safe }}
     </main>
-    <footer>{% include "components/footer.njk" %}</footer>
+    {% include "components/footer.njk" %}
   </body>
 </html>
