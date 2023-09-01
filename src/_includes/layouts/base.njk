@@ -14,12 +14,16 @@
       href="/favicon-dark.png"
       media="(prefers-color-scheme: dark)"
     />
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+    />
   </head>
   <body>
+    <header>{% include "components/navbar.njk" %}</header>
     <main>
-      {% include "components/navbar.njk" %}
       {{ content | safe }}
-      {% include "components/footer.njk" %}
     </main>
+    <footer>{% include "components/footer.njk" %}</footer>
   </body>
 </html>
