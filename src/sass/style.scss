@@ -7,13 +7,13 @@ $secondary-text-color: #aaa;
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: auto;
-  max-width: 100rem;
+  max-width: 75rem;
   padding: 2rem;
 
   nav {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
     justify-content: space-between;
 
@@ -52,15 +52,30 @@ body {
   }
 
   footer {
-    hr {
-      border: 0.1rem solid $secondary-text-color;
-      width: 80%;
-    }
+    align-items: center;
+    border-top: 1px solid $secondary-text-color;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+    padding: 0 2rem;
 
     p {
       color: $secondary-text-color;
-      padding: 1rem;
-      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline;
+        margin-left: 1rem;
+
+        a {
+          color: $secondary-text-color;
+          font-size: 2rem;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
