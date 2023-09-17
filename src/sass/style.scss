@@ -7,7 +7,7 @@ $secondary-text-color: #aaa;
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: auto;
   max-width: 75rem;
   padding: 2rem;
@@ -47,9 +47,10 @@ body {
     }
   }
 
+  /*
   main {
-    text-align: center;
   }
+  */
 
   footer {
     align-items: center;

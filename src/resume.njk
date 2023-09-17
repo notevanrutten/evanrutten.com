@@ -2,4 +2,73 @@
 layout: "layouts/base.njk"
 ---
 
-<h1>Resume Page</h1>
+<main>
+  <header>
+    <h1>EVAN RUTTEN</h1>
+    <h2>SYSTEMS ENGINEER</h2>
+    <p>erutten@uoguelph.ca<br />(519) 897-2162<br />Kitchener, ON</p>
+    <a href="https://www.evanrutten.com">www.evanrutten.com</a>
+  </header>
+
+  <section>
+    <h3>SKILLS</h3>
+    <p><b>Languages</b> &mdash; C &bull; C++ &bull; TypeScript &bull; HTML &bull; CSS &bull; Qt (QML)</p>
+    <p><b>Software</b> &mdash; Git &bull; Linux &bull; CI/CD (GitHub Actions) &bull; Firebase &bull; Azure</p>
+    <p><b>Electrical</b> &mdash; ESP32 &bull; Raspberry Pi &bull; KiCad &bull; PCB design &bull; Soldering</p>
+    <p><b>Mechanical</b> &mdash; SolidWorks &bull; AutoCAD &bull; Cura &bull; 3D printing (FDM)</p>
+  </section>
+
+  <section>
+    <h3>EXPERIENCE</h3>
+    <div class="experience">
+      <h4>WEARABLE DEVICE DEVELOPER (CO-OP)</h4>
+      <div class="location">ORIOLE AI INC, Guelph, ON</div>
+      <div class="date">05/2023 - 08/2023</div>
+      <ul>
+        <li>Developed a prototype for smart glasses with the ability to capture images and convert them to speech.</li>
+        <li>Designed software in <b>C</b> for an <b>ESP32</b> to control electronic peripherals and access cloud APIs (<b>Firebase</b>, <b>Azure</b>).</li>
+        <li>Assembled a complete electrical system, including a camera, microphone, speakers, SD reader, and battery.</li>
+        <li>Designed a <b>custom PCB</b> for a 5-button directional pad using <b>KiCad</b>, allowing for various audio controls.</li>
+        <li>Modeled and produced a <b>3D-printed</b> frame to house the components, utilizing <b>SolidWorks</b> for the design.</li>
+        <li>Oversaw the entire prototyping process, including research, design, manufacturing, and assembly.</li>
+      </ul>
+    </div>
+    <div class="experience">
+      <h4>EMBEDDED SYSTEMS DEVELOPER</h4>
+      <div class="location">GRYPHON RACING FSAE, Guelph, ON</div>
+      <div class="date">09/2022 - present</div>
+      <ul>
+        <li>Assisted the racing team in developing embedded systems for our electrical and internal combustion cars.</li>
+        <li>Focused mainly on the transfer and display of information using various methods (dash, data logger, etc).</li>
+        <li>Collaborated on software projects through <b>Git</b>, utilizing proper branch and pull request methodology.</li>
+        <li>Integrated <b>CI/CD</b> workflows for all projects using GitHub Actions, automating build and deploy processes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3>PROJECTS</h3>
+    <div class="project">
+      <h4>VEHICLE DASHBOARD INTERFACE</h4>
+      <p>An embedded dash screen for our latest EV race car (GRC22), displaying critical data and/or warnings to the driver</p>
+      <p><b>Technologies</b> &mdash; Qt (QML) &bull; C++ &bull; Raspberry Pi &bull; CAN protocol</p>
+    </div>
+    <div class="project">
+      <h4>DISCORD-INTEGRATED DOOR SENSOR</h4>
+      <p>A smart door sensor for the Gryphon Racing shop, connected to our custom Discord bot to notify team members.</p>
+      <p><b>Technologies</b> &mdash; C &bull; ESP32 &bull; TypeScript &bull; HTTP requests</p>
+    </div>
+    <div class="project">
+      <h4>REMOTE DATA LOGGING MODULE (WIP)</h4>
+      <p>An onboard data logging system for our IC race car (GRC19), using radio transmission for remote data monitoring.</p>
+      <p><b>Technologies</b> &mdash; C &bull; ESP32 &bull; NRF communication</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>EDUCATION</h3>
+    <h4>B.ENG &ndash; ENGINEERING SYSTEMS AND COMPUTING</h4>
+    <div class="location">UNIVERSITY OF GUELPH, Guelph, ON</div>
+    <div class="date">2021 - 2026</div>
+  </section>
+</main>
