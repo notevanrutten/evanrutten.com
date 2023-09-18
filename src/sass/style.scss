@@ -1,8 +1,8 @@
-$primary-bg-color: #222;
-$primary-text-color: #fff;
+$primary-bg-color: #1a1a1a;
+$primary-text-color: #ffffff;
 
-$secondary-bg-color: #333;
-$secondary-text-color: #aaa;
+$secondary-bg-color: #262626;
+$secondary-text-color: #d9d9d9;
 
 body {
   background-color: $primary-bg-color;
@@ -87,11 +87,12 @@ body {
         text-align: right;
 
         p {
+          color: $secondary-text-color;
           margin: 0;
         }
 
         a {
-          color: $primary-text-color;
+          color: $secondary-text-color;
           align-self: flex-end;
         }
       }
@@ -113,6 +114,7 @@ body {
 
       p,
       ul {
+        color: $secondary-text-color;
         font-size: 13px;
         margin: 0;
       }
