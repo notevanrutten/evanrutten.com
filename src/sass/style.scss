@@ -47,17 +47,117 @@ body {
     }
   }
 
-  /*
   main {
+    background-color: $secondary-bg-color;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    margin: 2rem auto 4rem;
+    padding: 4rem;
+    width: 44rem;
+
+    header {
+      align-items: stretch;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      .left-column {
+        flex: 1;
+
+        h1 {
+          font-family: "Marcellus";
+          font-weight: normal;
+          font-size: 40px;
+          margin: 0;
+        }
+
+        h2 {
+          font-weight: normal;
+          font-size: 19px;
+          margin: 1rem 0 0 0;
+        }
+      }
+
+      .right-column {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        justify-content: space-between;
+        margin: 0.3rem 0 0.2rem 0;
+        text-align: right;
+
+        p {
+          margin: 0;
+        }
+
+        a {
+          color: $primary-text-color;
+          align-self: flex-end;
+        }
+      }
+    }
+
+    section {
+      margin-top: 1.5rem;
+
+      h3 {
+        border-bottom: 1px solid;
+        font-size: 19px;
+        margin: 0 0 1rem 0;
+      }
+
+      h4 {
+        font-size: 15px;
+        margin: 0;
+      }
+
+      p,
+      ul {
+        font-size: 13px;
+        margin: 0;
+      }
+
+      .location-and-date {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.35rem;
+      }
+
+      .skills {
+        p {
+          margin-bottom: 0.35rem;
+        }
+      }
+
+      .experience {
+        margin-bottom: 1.5rem;
+      }
+
+      .project {
+        margin-bottom: 1.5rem;
+
+        h4 {
+          margin-bottom: 0.35rem;
+        }
+      }
+
+      .education {
+        h4 {
+          margin-bottom: 0.35rem;
+        }
+
+        .location-and-date {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
-  */
 
   footer {
     align-items: center;
     border-top: 1px solid $secondary-text-color;
     display: flex;
     justify-content: space-between;
-    margin: 2rem 5rem;
     padding: 0 2rem;
 
     p {
