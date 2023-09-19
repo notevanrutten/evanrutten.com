@@ -111,13 +111,18 @@ body {
 
     .projects {
       section {
+        margin-bottom: 4rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
         h1 {
           margin-top: 0;
         }
 
         .info {
           display: flex;
-          margin-bottom: 2rem;
 
           .images {
             display: flex;
