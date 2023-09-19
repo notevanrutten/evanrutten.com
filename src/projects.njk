@@ -30,7 +30,12 @@ layout: "layouts/base.njk"
         <img src="../assets/projects/door-sensor-1.jpg" />
         <img src="../assets/projects/door-sensor-2.png" />
       </div>
-      <div class="text"><p>Coming soon... (Sep 20)</p></div>
+      <div class="text">
+        <p>The goal of this project was to automate the notification process for the Gryphon Racing shop open status. This was accomplished through a smart door sensor connected to our custom Discord bot, which sends a message to a specific channel any time the status changes.</p>
+        <p>The sensor itself is built using an ESP32 and a magnetic reed switch. The enclosure was designed in SolidWorks and manufactured using an FDM 3D printer. The device is set to send a “heartbeat” every minute containing the state of the magnetic switch, which is done through an HTTP request directed at the team’s server.</p>
+        <p>On the server side, there is a custom Discord bot (programmed with TypeScript) that helps to perform various tasks on the team’s server. To receive messages from the door sensor, the bot is set up to host its own HTTP server which processes the incoming heartbeats. If a state change is detected, the bot will delete its previous message from the specified channel and replace it with the updated door status. The bot also has a system to automatically detect if the sensor has been down for 10+ minutes, and will send an error accordingly.</p>
+        <p>Overall, this project has provided immense utility to the race team as it eliminates the need for a human to post a message whenever the shop status changes. It also removes the chance for human error in the case that someone forgets to update the channel.</p>
+      </div>
     </div>
   </section>
 
