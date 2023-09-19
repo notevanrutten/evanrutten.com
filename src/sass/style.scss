@@ -115,8 +115,24 @@ body {
           margin-top: 0;
         }
 
-        img {
-          width: 15rem;
+        .info {
+          display: flex;
+          margin-bottom: 2rem;
+
+          .images {
+            display: flex;
+            flex-direction: column;
+
+            img {
+              box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+              margin-right: 2rem;
+              width: 15rem;
+            }
+          }
+
+          p {
+            margin-top: 0;
+          }
         }
       }
     }
