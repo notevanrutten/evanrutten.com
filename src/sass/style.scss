@@ -12,7 +12,7 @@ body {
   color: $primary-text-color;
   font-family: "Open Sans", sans-serif;
   margin: auto;
-  max-width: 75rem;
+  max-width: 52rem;
   padding: 2rem;
 
   nav {
@@ -58,101 +58,155 @@ body {
     padding: 4rem;
     width: 44rem;
 
-    header {
-      align-items: stretch;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 2rem;
+    .intro {
+      header {
+        align-items: center;
+        display: flex;
 
-      .left-column {
-        flex: 1;
-
-        h1 {
-          font-family: "Marcellus";
-          font-weight: normal;
-          font-size: 40px;
-          margin: 0;
+        img {
+          align-items: center;
+          height: 14rem;
+          width: 14rem;
         }
 
-        h2 {
-          font-weight: normal;
-          font-size: 19px;
-          margin: 1rem 0 0 0;
+        section {
+          margin-left: 2rem;
+
+          h2 {
+            font-weight: normal;
+            margin-top: 0;
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: $primary-text-color;
+          }
         }
       }
 
-      .right-column {
-        display: flex;
-        flex-direction: column;
-        font-size: 13px;
-        justify-content: space-between;
-        margin: 0.3rem 0 0.2rem 0;
-        text-align: right;
+      h1 {
+        margin-top: 5rem;
+        text-align: center;
+      }
 
-        p {
-          color: $secondary-text-color;
-          margin: 0;
-        }
+      ul {
+        list-style: none;
+        margin: 2rem 0 0 0;
+        padding: 0;
+        text-align: center;
 
-        a {
-          color: $secondary-text-color;
-          align-self: flex-end;
+        li {
+          display: inline-block;
+          margin: 0 1.5rem;
+
+          img {
+            margin-bottom: 0.5rem;
+            width: 2rem;
+          }
         }
       }
     }
 
-    section {
-      margin-top: 1.5rem;
-
-      h3 {
-        border-bottom: 1px solid;
-        font-size: 19px;
-        margin: 0 0 1rem 0;
-      }
-
-      h4 {
-        font-size: 15px;
-        margin: 0;
-      }
-
-      p,
-      ul {
-        color: $secondary-text-color;
-        font-size: 13px;
-        margin: 0;
-      }
-
-      .location-and-date {
+    .resume {
+      header {
+        align-items: stretch;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 0.35rem;
-      }
+        margin-bottom: 2rem;
 
-      .skills {
-        p {
-          margin-bottom: 0.35rem;
+        .left-column {
+          flex: 1;
+
+          h1 {
+            font-family: "Marcellus";
+            font-weight: normal;
+            font-size: 40px;
+            margin: 0;
+          }
+
+          h2 {
+            font-weight: normal;
+            font-size: 19px;
+            margin: 1rem 0 0 0;
+          }
+        }
+
+        .right-column {
+          display: flex;
+          flex-direction: column;
+          font-size: 13px;
+          justify-content: space-between;
+          margin: 0.3rem 0 0.2rem 0;
+          text-align: right;
+
+          p {
+            color: $secondary-text-color;
+            margin: 0;
+          }
+
+          a {
+            color: $secondary-text-color;
+            align-self: flex-end;
+          }
         }
       }
 
-      .experience {
-        margin-bottom: 1.5rem;
-      }
+      section {
+        margin-top: 1.5rem;
 
-      .project {
-        margin-bottom: 1.5rem;
-
-        h4 {
-          margin-bottom: 0.35rem;
+        h3 {
+          border-bottom: 1px solid;
+          font-size: 19px;
+          margin: 0 0 1rem 0;
         }
-      }
 
-      .education {
         h4 {
-          margin-bottom: 0.35rem;
+          font-size: 15px;
+          margin: 0;
+        }
+
+        p,
+        ul {
+          color: $secondary-text-color;
+          font-size: 13px;
+          margin: 0;
         }
 
         .location-and-date {
-          margin-bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 0.35rem;
+        }
+
+        .skills {
+          p {
+            margin-bottom: 0.35rem;
+          }
+        }
+
+        .experience {
+          margin-bottom: 1.5rem;
+        }
+
+        .project {
+          margin-bottom: 1.5rem;
+
+          h4 {
+            margin-bottom: 0.35rem;
+          }
+        }
+
+        .education {
+          h4 {
+            margin-bottom: 0.35rem;
+          }
+
+          .location-and-date {
+            margin-bottom: 0;
+          }
         }
       }
     }
