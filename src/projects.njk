@@ -10,7 +10,16 @@ layout: "layouts/base.njk"
         <img src="../assets/projects/dashboard-1.png" />
         <img src="../assets/projects/dashboard-2.png" />
       </div>
-      <p>Coming soon... (Sep 20)</p>
+      <div class="text">
+        <p>The goal of this project was to create a custom dash-screen for Gryphon Racing’s latest EV, GRC22. The design utilizes a Raspberry Pi to consolidate various electrical signals and control a high-brightness screen to display crucial information and/or warnings.</p>
+        <p>The back-end is programmed in C++ and is used to process CAN signals from the Motor Controller, BMS (Battery Management System), and Energy Meter. The front-end is developed with Qt using QML and is used to display multiple screen types to the driver. The various screens include:</p>
+        <ul>
+          <li>DRIVE - Displays the most crucial information to the driver.</li>
+          <li>DEBUG - Displays all signals on the vehicle for troubleshooting purposes.</li>
+          <li>TUNING - Displays a torque map, allowing for live tuning of the car.</li>
+        </ul>
+        <p>The screens can be toggled between by plugging a keyboard into the Raspberry Pi. This control method is also what makes the live torque map adjustment possible. Going forward, we are looking to improve the visual design of the various screens, continue testing to ensure reliability on all sensors, and improve functionality of the live tuning.</p>
+      </div>
     </div>
   </section>
 
