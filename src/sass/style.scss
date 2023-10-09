@@ -12,7 +12,7 @@ body {
   color: $primary-text-color;
   font-family: "Open Sans", sans-serif;
   margin: auto;
-  max-width: 52rem;
+  max-width: 53rem;
   padding: 2rem;
 
   nav {
@@ -56,7 +56,7 @@ body {
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
     margin: 2rem auto 4rem;
     padding: 4rem;
-    width: 44rem;
+    width: 45rem;
 
     .intro {
       header {
@@ -167,13 +167,13 @@ body {
           h1 {
             font-family: "Marcellus";
             font-weight: normal;
-            font-size: 40px;
+            font-size: 30pt;
             margin: 0;
           }
 
           h2 {
             font-weight: normal;
-            font-size: 19px;
+            font-size: 14pt;
             margin: 1rem 0 0 0;
           }
         }
@@ -181,7 +181,7 @@ body {
         .right-column {
           display: flex;
           flex-direction: column;
-          font-size: 13px;
+          font-size: 10pt;
           justify-content: space-between;
           margin: 0.3rem 0 0.2rem 0;
           text-align: right;
@@ -199,23 +199,23 @@ body {
       }
 
       section {
-        margin-top: 1.5rem;
+        margin-top: 1.25rem;
 
         h3 {
           border-bottom: 1px solid;
-          font-size: 19px;
-          margin: 0 0 1rem 0;
+          font-size: 13pt;
+          margin: 0 0 0.75rem 0;
         }
 
         h4 {
-          font-size: 15px;
+          font-size: 11pt;
           margin: 0;
         }
 
         p,
         ul {
           color: $secondary-text-color;
-          font-size: 13px;
+          font-size: 10pt;
           margin: 0;
         }
 
@@ -232,20 +232,18 @@ body {
         }
 
         .experience {
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.75rem;
         }
 
-        .project {
-          margin-bottom: 1.5rem;
-
-          h4 {
-            margin-bottom: 0.35rem;
+        .other {
+          h5 {
+            font-size: 11pt;
+            margin: 0 0 0.25rem 0;
+            text-decoration: underline;
           }
-        }
 
-        .education {
-          h4 {
-            margin-bottom: 0.35rem;
+          b {
+            color: $primary-text-color;
           }
 
           .location-and-date {
