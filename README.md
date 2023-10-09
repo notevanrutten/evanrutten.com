@@ -9,6 +9,6 @@ A personal portfolio site built with Eleventy, featuring my projects and skills
 ## Setup
 ```bash
 npm install    # Install dependencies
-npm run build  # Ensure successful compilation
+npm run build  # Test compilation
 npm start      # Start live server
 ```
