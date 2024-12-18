@@ -155,101 +155,10 @@ body {
     }
 
     .resume {
-      header {
-        align-items: stretch;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-
-        .left-column {
-          flex: 1;
-
-          h1 {
-            font-family: "Marcellus";
-            font-weight: normal;
-            font-size: 30pt;
-            margin: 0;
-          }
-
-          h2 {
-            font-weight: normal;
-            font-size: 14pt;
-            margin: 1rem 0 0 0;
-          }
-        }
-
-        .right-column {
-          display: flex;
-          flex-direction: column;
-          font-size: 10pt;
-          justify-content: space-between;
-          margin: 0.3rem 0 0.2rem 0;
-          text-align: right;
-
-          p {
-            color: $secondary-text-color;
-            margin: 0;
-          }
-
-          a {
-            color: $secondary-text-color;
-            align-self: flex-end;
-          }
-        }
-      }
-
-      section {
-        margin-top: 1.25rem;
-
-        h3 {
-          border-bottom: 1px solid;
-          font-size: 13pt;
-          margin: 0 0 0.75rem 0;
-        }
-
-        h4 {
-          font-size: 11pt;
-          margin: 0;
-        }
-
-        p,
-        ul {
-          color: $secondary-text-color;
-          font-size: 10pt;
-          margin: 0;
-        }
-
-        .location-and-date {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 0.35rem;
-        }
-
-        .skills {
-          p {
-            margin-bottom: 0.35rem;
-          }
-        }
-
-        .experience {
-          margin-bottom: 0.75rem;
-        }
-
-        .other {
-          h5 {
-            font-size: 11pt;
-            margin: 0 0 0.25rem 0;
-            text-decoration: underline;
-          }
-
-          b {
-            color: $primary-text-color;
-          }
-
-          .location-and-date {
-            margin-bottom: 0;
-          }
-        }
+      iframe {
+        border: 0;
+        width: 100%;
+        aspect-ratio: 8.5 / 11;
       }
     }
 
