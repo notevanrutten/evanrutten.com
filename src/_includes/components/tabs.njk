@@ -1,0 +1,35 @@
+<div>
+  <div class="tabs">
+    {% for tab in tabs %}
+    <div class="tab" data-tab="{{ tab.key }}">{{ tab.title }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="contents">
+    {% for tab in tabs %}
+    <div class="content" id="content-{{ tab.key }}">{{ tab.content | safe }}</div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".content");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      // remove active class from all tabs and contents
+      tabs.forEach((t) => t.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
+
+      // add active class to clicked tab and corresponding content
+      tab.classList.add("active");
+      const contentId = `content-${tab.dataset.tab}`;
+      document.getElementById(contentId).classList.add("active");
+    });
+  });
+
+  // set the first tab as active by default
+  tabs[0]?.classList.add("active");
+  contents[0]?.classList.add("active");
+</script>

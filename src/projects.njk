@@ -3,69 +3,23 @@ layout: "layouts/base.njk"
 ---
 
 <div class="projects">
-  <section>
-    <h1>Vehicle Dashboard Interface</h1>
-    <div class="info">
-      <div class="images">
-        <img src="../assets/projects/dashboard-1.png" />
-        <img src="../assets/projects/dashboard-2.png" />
-      </div>
-      <div class="text">
-        <p>The goal of this project was to create a custom dash-screen for Gryphon Racing’s latest EV, GRC22. The design utilizes a Raspberry Pi to consolidate various electrical signals and control a high-brightness screen to display crucial information and/or warnings.</p>
-        <p>The back-end is programmed in C++ and is used to process CAN signals from the Motor Controller, BMS (Battery Management System), and Energy Meter. The front-end is developed with Qt using QML and is used to display multiple screen types to the driver. The various screens include:</p>
-        <ul>
-          <li>DRIVE - Displays the most crucial information to the driver.</li>
-          <li>DEBUG - Displays all signals on the vehicle for troubleshooting purposes.</li>
-          <li>TUNING - Displays a torque map, allowing for live tuning of the car.</li>
-        </ul>
-        <p>The screens can be toggled between by plugging a keyboard into the Raspberry Pi. This control method is also what makes the live torque map adjustment possible. Going forward, we are looking to improve the visual design of the various screens, continue testing to ensure reliability on all sensors, and improve functionality of the live tuning.</p>
-      </div>
-    </div>
-  </section>
+  {% set tabs = [
+    {
+      key: "tab1",
+      title: "ENGG*4420",
+      content: "<p>Tab 1</p>"
+    },
+    {
+      key: "tab2",
+      title: "ENGG*4200",
+      content: "<p>Tab 2</p>"
+    },
+    {
+      key: "tab3",
+      title: "CIS*2750",
+      content: "<p>Tab 3</p>"
+    }
+  ] %}
 
-  <section>
-    <h1>Discord-Integrated Door Sensor</h1>
-    <div class="info">
-      <div class="images">
-        <img src="../assets/projects/door-sensor-1.jpg" />
-        <img src="../assets/projects/door-sensor-2.png" />
-      </div>
-      <div class="text">
-        <p>The goal of this project was to automate the notification process for the Gryphon Racing shop open status. This was accomplished through a smart door sensor connected to our custom Discord bot, which sends a message to a specific channel any time the status changes.</p>
-        <p>The sensor itself is built using an ESP32 and a magnetic reed switch. The enclosure was designed in SolidWorks and manufactured using an FDM 3D printer. The device is set to send a “heartbeat” every minute containing the state of the magnetic switch, which is done through an HTTP request directed at the team’s server.</p>
-        <p>On the server side, there is a custom Discord bot (programmed with TypeScript) that helps to perform various tasks on the team’s server. To receive messages from the door sensor, the bot is set up to host its own HTTP server which processes the incoming heartbeats. If a state change is detected, the bot will delete its previous message from the specified channel and replace it with the updated door status. The bot also has a system to automatically detect if the sensor has been down for 10+ minutes, and will send an error accordingly.</p>
-        <p>Overall, this project has provided immense utility to the race team as it eliminates the need for a human to post a message whenever the shop status changes. It also removes the chance for human error in the case that someone forgets to update the channel.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h1>TaskMate &nbsp;&ndash;&nbsp; Web-Based Assignment Tracker</h1>
-    <div class="info">
-      <div class="images">
-        <img src="../assets/projects/taskmate.png" />
-      </div>
-      <div class="text">
-        <p>The goal of this project was to create a simplistic, private to-do list app to track any assignments or tasks I might have. I wanted the app to be accessible from anywhere on any system, so I made it a web-based application using Django and hosted it on my personal Linux server.</p>
-        <p>The app was primarily developed using Python and has the ability to save an unlimited number of tasks. Each task has the following parameters: title, details, and date. The app is currently in a relatively new state, so some features are yet to be implemented:</p>
-        <ul>
-          <li>Custom tags for specific categories (eg. different courses)</li>
-          <li>Different sorting views (sort by due date vs. tag groups)</li>
-          <li>Task editing + priority markers</li>
-        </ul>
-        <p>I am currently working on a live demo for the project, which will allow anyone visiting my website to try out the app. In the future the app will be accessible at <a href="https://taskmate.evanrutten.com">taskmate.evanrutten.com</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h1>Remote Logging Module (WIP)</h1>
-    <div class="info">
-      <div class="images">
-        <img src="../assets/projects/logging-module-1.jpg" />
-        <img src="../assets/projects/logging-module-2.png" />
-      </div>
-      <div class="text"><p>Coming soon...</p></div>
-    </div>
-  </section>
+  {% include "components/tabs.njk" %}
 </div>

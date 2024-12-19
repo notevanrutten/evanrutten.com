@@ -7,6 +7,8 @@ $secondary-text-color: #d9d9d9;
 $primary-button-color: #595959;
 $secondary-button-color: #666666;
 
+$inactive-tab-color: #2d2d2d;
+
 body {
   background-color: $primary-background-color;
   color: $primary-text-color;
@@ -51,12 +53,14 @@ body {
   }
 
   main {
-    background-color: $secondary-background-color;
-    border-radius: 2rem;
-    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
     margin: 2rem auto 4rem;
-    padding: 4rem;
-    width: 45rem;
+
+    &:not(:has(.projects)) {
+      background-color: $secondary-background-color;
+      border-radius: 2rem;
+      box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+      padding: 4rem;
+    }
 
     .intro {
       header {
@@ -110,46 +114,40 @@ body {
     }
 
     .projects {
-      section {
-        margin-bottom: 4rem;
+      .tabs {
+        display: flex;
+        cursor: pointer;
 
-        &:last-child {
-          margin-bottom: 0;
-        }
+        .tab {
+          background-color: $inactive-tab-color;
+          border-radius: 1rem 1rem 0 0;
+          margin-right: 0.5rem;
+          padding: 0.5rem 1rem;
+          z-index: 1;
 
-        h1 {
-          margin-top: 0;
-        }
-
-        .info {
-          display: flex;
-
-          .images {
-            display: flex;
-            flex-direction: column;
-
-            img {
-              box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-              margin-right: 2rem;
-              width: 14rem;
-            }
+          &.active {
+            background-color: $secondary-background-color;
+            box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+            font-weight: bold;
           }
 
-          .text {
-            font-size: 0.75rem;
-
-            p {
-              margin-top: 0;
-
-              &:last-child {
-                margin-bottom: 0;
-              }
-            }
-
-            a {
-              color: $primary-text-color;
-            }
+          &:hover {
+            text-decoration: underline;
           }
+        }
+      }
+
+      .content {
+        background-color: $secondary-background-color;
+        border-radius: 0 2rem 2rem 2rem;
+        box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+        display: none;
+        padding: 2rem;
+        position: relative;
+        z-index: 2;
+
+        &.active {
+          display: block;
         }
       }
     }
